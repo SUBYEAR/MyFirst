@@ -1,0 +1,16 @@
+申请帐号 注册Github
+1.安装Git 客户端 
+	git config --global user.name "Mona Lisa"配置用户名
+	git config --global user.name  查询配置
+2. 配置邮箱
+	git config --global user.email "email@example.com"
+	git config --global user.name
+3. 生成SSH 密钥
+   命令行中 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+   在本地电脑上复制密钥 ，在远端[Github的网页地址]的“Settings/SSH and GPG Keys”粘贴
+4. git 基本命令使用
+	git --version
+	git status
+	git clone  XXXX
+	git add  xxx  ##添加版本控制文件
+	git commit -m “message”  -m 参数表示可以直接输入后面的“message”，如果不加 -m参数，那么是不能直接输入message的，而是会调用一个编辑器一般是vim来让你输入这个message，
