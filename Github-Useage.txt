@@ -4,7 +4,7 @@
 	git config --global user.name  查询配置
 2. 配置邮箱
 	git config --global user.email "email@example.com"
-	git config --global user.name
+	git config --global user.email
 3. 生成SSH 密钥
    命令行中 ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
    在本地电脑上复制密钥 ，在远端[Github的网页地址]的“Settings/SSH and GPG Keys”粘贴
@@ -21,5 +21,5 @@ sudo apt-get install python-pip sudo pip install shadowsocks sudo ssserver -p <p
 port 和 password 根据需要填写。记得防火墙里开放该监听的 port。
 然后在自己机上上安装 shadowsocks 客户端，设置 PAC，开始爽歪歪吧。
 git 设置 socks5 代理。
-git config --global http.proxy 'socks5://127.0.0.1:1080' git config
-开始 clone，如果觉得仓库太大，可以在 git clone 中加入参数 --depth=1，只拉取最近的一个 revision。
+git config --global http.proxy 'socks5://127.0.0.1:1080'
+如果觉得仓库太大，可以在 git clone 中加入参数 --depth=1，只拉取最近的一个 revision。
